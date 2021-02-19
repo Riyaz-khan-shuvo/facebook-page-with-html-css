@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+/* menu area start */
+
+.header-area {
+    background: #3A5999;
+}
+
+nav {
+    width: 100%;
+}
+
+.logo i {
+    color: white;
+    font-size: 35px;
+    line-height: 55px;
+    font-weight: bold;
+    margin-right: 19px;
+}
+
+.input {
+    position: relative;
+    padding-bottom: 9px;
+}
+
+.input input {
+    padding: 5px 0;
+    width: 255px;
+}
+
+.input button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+}
+
+.input button i {
+    font-size: 19px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 55px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+ul li a .profile img {
+    height: 35px;
+    width: auto;
+    padding-top: 25px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* menu area ends */
+
+.all-area {
+    background: #E9EAEE;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+/* vertical menu area */
+
+.left-content {
+    width: 15%;
+}
+
+.left-content .profile-photo {
+    height: 125px;
+    width: auto;
+}
+
+.left-content .profile-photo img {
+    height: 100%;
+    width: auto;
+    margin: 25px 0;
+}
+
+.wrapper .vertical-menu-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper ul li a.active, .wrapper ul li a:hover {
+    background: #DFE0E4;
+    transition: .001s;
+    border-left: 3px solid #55628D;
+}
+
+.vertical-menu-area ul li a, .vertical-menu-area li a {
+    height: 36px;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 12px 0;
+    color: black;
+}
+
+.create-page {
+    background: #41AE29;
+    color: #fff;
+    border: none;
+    padding: 5px 19px;
+    border-radius: 3px;
+}
+
+/* vertical menu ends */
+
+/* center-content area start */
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents .center-content {
+    width: 80%;
+    padding-left: 5%;
+}
+
+/* .contents .center-content .cover{
+    width: 100%;
+} */
+
+.contents .center-content img {
+    width: 175%;
+}
+
+.contents .center-content .action-area {
+    background: #fff;
+    padding: 5px 9px;
+    width: 175%;
+}
+
+.contents .center-content .action-area button {
+    padding: 7px 0;
+}
+
+.contents .center-content .action-area button:hover {
+    cursor: pointer;
+}
+
+.contents .center-content .action-area .action-area-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents .center-content .action-area .action-area-buttons .contact-us-btn {
+    text-align: right;
+}
+
+.contents .center-content .action-area .action-area-buttons .contact-us-btn button {
+    background: #3F82FE;
+    color: #fff;
+    border: none;
+    padding: 9px 65px;
+    border-radius: 3px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #F6F6FA;
+    padding: 7px 9px;
+    margin-top: 15px;
+}
+
+.status i {
+    padding: 9px 0;
+}
+
+.contents .center-content .write-some-thing {
+    width: 100%;
+}
+
+.contents .center-content .write-some-thing input {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.post-area {
+    background: #fff;
+    margin-top: 25px;
+    /* border-bottom: 3px solid #ddd; */
+    box-shadow: 0 8px 6px -6px black;
+    border-bottom: 1px solid #ddd;
+}
+
+.center-content .like-comment-area {
+    background: #fff;
+    padding: 9px;
+}
+
+.center-content .like-comment-area button {
+    border: none;
+    padding: 15px 7px;
+    margin: 0 7px;
+    background: none;
+}
+
+.center-content .like-comment-area button i {
+    color: #9C9FA6;
+}
+
+.write-comment-area {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.write-comment-area input {
+    padding: 9px 0;
+    width: 315%;
+    position: relative;
+}
+
+.write-comment-area .input-area i {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    padding: 9px;
+    font-size: 19px;
+}
+
+/* center-content area ends */
+
+/* right content area start */
+
+.right-content {
+    margin-top: 495px;
+    margin-left: 5%;
+}
+
+/* right content area ends */
+
+@media (max-width: 768px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .input {
+        display: none;
+    }
+    .left-content {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .contents {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .left-content .profile-photo {
+        height: 155px;
+        width: auto;
+        text-align: center;
+    }
+    .left-content .profile-photo img {
+        height: 100%;
+        width: auto;
+    }
+    .contents .center-content {
+        width: 100%;
+    }
+    .contents .center-content img {
+        width: 100%;
+    }
+    .contents .center-content .action-area {
+        background: #fff;
+        padding: 5px 9px;
+        width: 100%;
+    }
+    .write-comment-area input {
+        width: 145%;
+        
+    }
+    .center-content .like-comment-area button {
+        padding: 0;
+        margin: 0 7px;
+  
+    }
+}
+
+@media (max-width: 576px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3A5999;
+        top: 55px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .center-content .like-comment-area button i{
+        display: none;
+    }
+}
